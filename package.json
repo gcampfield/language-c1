@@ -1,6 +1,6 @@
 {
   "name": "language-c1",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Syntax highlighting for C1",
   "repository": "https://github.com/gcampfield/language-c1",
   "license": "MIT",
