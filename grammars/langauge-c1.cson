@@ -1,6 +1,6 @@
-'scopeName': 'source.c0'
-'name': 'C0'
-'fileTypes': ['c0']
+'scopeName': 'source.c1'
+'name': 'C1'
+'fileTypes': ['c1']
 'patterns': [
   {
     'comment': 'pragmas'
