@@ -4,112 +4,107 @@
 'patterns': [
   {
     'comment': 'pragmas'
-    'name': 'storage.modifier.import.entity.name.type.class.c0'
+    'name': 'storage.modifier.import.entity.name.type.class.c1'
     'begin': '^#'
     'end': '\n'
   }
   {
     'comment': 'string literal'
-    'name': 'string.quoted.single.c0'
+    'name': 'string.quoted.single.c1'
     'begin': '\''
     'end': '(?<![^\\\\]\\\\)\''
   }
   {
     'comment': 'string literal'
-    'name': 'string.quoted.double.c0'
+    'name': 'string.quoted.double.c1'
     'begin': '"'
     'end': '(?<![^\\\\]\\\\)\"'
   }
   {
     'comment': 'comment line'
-    'name': 'comment.line.double-slash.c0'
+    'name': 'comment.line.double-slash.c1'
     'begin': '//(?!@)'
     'end': '\\n'
   }
   {
     'comment': 'comment multi-line'
-    'name': 'comment.multi-line.c0'
+    'name': 'comment.multi-line.c1'
     'begin': '/\\*(?!@)'
     'end': '\\*/'
   }
   {
     'comment': 'contracts line'
-    'name': 'keyword.contracts.c0'
+    'name': 'keyword.contracts.c1'
     'match': '//@(?:requires|ensures|loop_invariant|assert)'
   }
   {
     'comment': 'contracts multi-line'
-    'name': 'keyword.contracts.c0'
+    'name': 'keyword.contracts.c1'
     'match': '/\\*@(?:requires|ensures|loop_invariant|assert)|@\\s*\\*/'
   }
   {
     'comment': 'contract keywords'
-    'name': 'keyword.contracts.keywords.c0'
+    'name': 'keyword.contracts.keywords.c1'
     'match': '\\\\(result|length|hastag)'
   }
   {
     'comment': 'types'
-    'name': 'support.type.c0'
-    'match': '\\b(int|bool|char|string|void)\\s*\\*?\\s*(\\[])?(?!:\\w)'
-  }
-  {
-    'comment': 'custom types'
-    'name': 'support.type.c0'
-    'match': '\\b[\\w-]+_t\\b'
+    'name': 'support.type.c1'
+    'match': '\\b([\\w-]+_t|int|bool|char|string|void)\\s*\\*?\\s*(\\[])?(?!\\w)'
   }
   {
     'comment': 'structs and typedefs'
-    'name': 'support.type.c0'
+    'name': 'support.type.c1'
     'match': '\\b(typedef|struct)'
   }
   {
     'comment': 'functions'
-    'name': 'support.function.entity.name.tag.c0'
+    'name': 'support.function.entity.name.tag.c1'
     'match': '\\b(\\w+)\\s*(?=\\()\\b'
   }
   {
     'comment': 'return'
-    'name': 'keyword.c0'
+    'name': 'keyword.c1'
     'match': '\\breturn\\b'
   }
   {
     'comment': 'flow control conditional'
-    'name': 'keyword.control.conditional.c0'
+    'name': 'keyword.control.conditional.c1'
     'match': '\\b(if|else)\\b'
   }
   {
     'comment': 'flow control loop'
-    'name': 'keyword.control.repeat.c0'
+    'name': 'keyword.control.repeat.c1'
     'match': '\\b(for|while)\\b'
   }
   {
     'comment': 'flow control statement'
-    'name': 'keyword.control.statement.c0'
+    'name': 'keyword.control.statement.c1'
     'match': '\\b(break)\\b'
   }
   {
     'comment': 'comparison operator'
-    'name': 'keyword.operator.comparison.c0'
+    'name': 'keyword.operator.comparison.c1'
     'match': '(<\\=|>\\=|<|>|<>|\\=)'
   }
   {
     'comment': 'arithmetic operator'
-    'name': 'keyword.operator.arithmetic.c0'
+    'name': 'keyword.operator.arithmetic.c1'
     'match': '(\\+|\\-|\\*|/(?!/|@)|<<|>>)'
   }
   {
     'comment': 'boolean constants'
-    'name': 'support.constant.bool.c0'
+    'name': 'support.constant.bool.c1'
     'match': '\\b(true|false)\\b'
   }
   {
     'comment': 'pointer constants'
-    'name': 'support.constant.pointer.c0'
+    'name': 'support.constant.pointer.c1'
     'match': '\\bNULL\\b'
   }
   {
     'comment': 'numerical constants'
-    'name': 'support.constant.number.c0'
+    'name': 'support.constant.number.c1'
     'match': '\\b(\\d+)\\b|\\b(0x[0-9A-Fa-f]{,8})\\b'
   }
 ]
